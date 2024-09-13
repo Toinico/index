@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>WebSkills</title>
+</head>
+<body>
+    <header>
+        <nav >
+            <ul class="box">
+                <li class="colorhome"><a href="index.html">Introdução</a></li>
+                <li class="colorhome"><a href="html.html">Html5</a></li>
+                <li class="colorhome">Css3</li>
+            </ul>
+        </nav>
+        <h1>CSS3</h1>
+    </header>
+    <main>
+        <h2>Oque é CSS3?</h2>
+        <p>É uma linguagem de estilo usada para descrever a aparência e o layout de documentos escritos em HTML. Ela controla a forma como os 
+             de uma página web são exibidos no navegador, como cores, fontes, espaçamento, alinhamento, e muito mais.
+        </p>
+
+        <h2>Conceitos básicos</h2>
+
+        <h3>Seletores</h3>
+        <p>Os seletores são utilizados para "selecionar" os elementos do HTML que você queira estilizar,como:</p>
+        
+        <h4>Exemplos:</h4>
+        <p><strong>Seletor de tipo:</strong> Estiliza todos os elementos de um determinado tipo (ex: p estiliza todos os parágrafos).<br>
+            <span class="boxcs" >p {
+            <br>    color: blue; <br>
+            }</span>
+            </p>
+        
+        <p><strong>Seletor de classe:</strong>Estiliza todos os elementos que tenham uma classe específica(por exemplo todos os elementos que tiverem a classe "class" serão estilizado)<br>
+            <span class="boxcs">.class{
+                <br> color:red;  <br>
+            } </span >          </p> 
+            
+
+        <p><strong>Seletor de Id:</strong>Estiliza um único elemento uma  única vez com um  ID específico (ex: #primeID)
+            #primeID{
+                font-size: 20px;
+            }</p>
+        
+        <h3>Propriedades</h3>
+        <p>As propriedades são os atributos que você deseja modificar em um elemento. Cada propriedade controla um aspecto visual, como a cor do texto, o tamanho da fonte, as margens, etc.</p>
+
+        <h4> Exemplos:</h4>
+        <ul>
+            <li class="liu"><Strong>color</Strong>:Define a cor do texto.</li>
+            <li class="liu"><strong>font-size</strong>:Define o tamanho da fonte.</li>
+            <li class="liu"><strong>margin</strong>:Define o espaço externo que fica ao redor do elemento.</li>
+            <li class="liu"><strong>background-color</strong>:Define a cor de fundo de um elemento.</li>
+            <li class="liu"><strong>border</strong>:Define o tamanho,cor e forma da borda que fica ao redor elemento.</li>
+        </ul>
+        
+        <h3>Valores</h3>
+        <p>Os valores são os parâmetros que você aplica ás propriedades.Elas determinam como o elemento se vai parecer ,comportar de acordo com a propriedade definida</p>
+
+        <h4>Exemplos:</h4>
+        <ul>
+            <li class="liu">p{
+                color: red; ("red" é o valor que atribui uma característica á propriedade ,que no exemplo e a color)}</li>
+            <li class="liu">h1{
+                font-size: 40px; ("40px" é o valor da propriedade "font-size")
+            </li class="liu">
+
+        </ul>
+        
+        <h3>Cascata e especifidade</h3>
+        <p>O CSS é uma linguagem "cascata", o que significa que os estilos podem ser sobrepostos. Quando dois ou mais estilos se aplicam ao mesmo elemento, o navegador precisa decidir qual estilo aplicar. Isso é feito com base nas regras de cascata e especifidade</p>
+
+        <h4>Especifidade</h4>
+        <p>Especifidade define a importância de um estilo baseado no seletor usado. Regras com maior especificidade têm prioridade.
+        </p>
+        <p><strong>Seletor de ID</strong>tem maior especifidade do que um seletor de classe</p>
+        <p><strong>Seletor de classe</strong>tem maior especifidade que um seletor de tipo (ex: p)</p>
+
+        <h3>Herança</h3>
+        <p> Algumas propriedades CSS são herdadas pelos elementos filhos de seus elementos pais, como color e font-family. No entanto, outras propriedades como padding e border não são herdadas.
+        </p>
+
+        <h3>Box Model</h3>
+        <p>Um dos conceitos mais importantes do CSS. Ele descreve como os elementos são representados no layout.Cada elemento é considerado uma "caixa" com quatro partes:
+        </p>
+        <ul>
+            <li class="liu"><strong>Content</strong>: O conteúdo real do elemento(texto,imagens,etc,).</li>
+            <li class="liu"><strong>Padding</strong>:Espaço entre o conteúdo e a borda.</li>
+            <li class="liu"><strong>Border</strong>:Borda ao redor o padding.</li>
+            <li class="liu"><strong>Margin</strong>:Espaço externo ao redor da borda</li>
+        </ul>
+
+        <h4>Exemplo de como ajustar o box model:</h4>
+        <p>
+            <span class="boxcs">
+            div{<br>
+                widht: 200px ;<br>
+                padding: 10px ;<br>
+                border: 2px  solid black ;<br>
+            }</span>
+        </p>
+
+        <h3>Estrutura básica </h3>
+        <p>A estrutura básica de um arquivo CSS segue o seguinte formato:</p>
+        <p>seletor{
+            propriedade: valor ;
+        }
+        </p>
+
+        <h3>Tipos de estilização:</h3>
+
+        <h4>Css Externo:</h4>
+        <p>Definido em um arquivo separado (style.css), vinculado ao HTML com a tag < link > no < head >.<br>
+            
+           <span class="boxcs"> < link rel="stylesheet" href="style.css" ></span></p>
+
+        <h4>CSS Interno</h4>
+        <p> Definido diretamente no arquivo HTML, dentro da tag < style > no < head >.<br>
+            <span class="boxcs"> < style ><br>
+              body {<br>
+                background-color: lightblue;<br>
+              }
+              <br>
+            < /style ></span></p>
+        
+            <h4>CSS Inline</h4>
+            <p> Aplicado diretamente aos elementos HTML, usando o atributo style. Menos recomendado devido à dificuldade de manutenção.<br>
+            <span class="boxcs">< h1 style="color: red;">Título em Vermelho< /h1 ></span>
+             </p>
+
+    </main>
+
+    
+    <footer>
+    </footer>
+</body>
+</html>

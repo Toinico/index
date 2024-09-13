@@ -1,0 +1,70 @@
+
+main{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1{
+    font-size: 650%;
+    padding-left: 33%;
+    color: rgb(85, 1, 1);
+}
+
+h2{
+    font-size: 350%;
+    padding-left: 20%;
+    color: rgb(166, 0, 33);
+}
+
+p{
+    font-size: 180%;
+}
+
+.box{
+    display: flex;
+    flex-flow: wrap row;
+    gap:10%;
+    border: 7% rgb(158, 27, 27) solid;
+    border-radius:20px;
+    background-color: rgb(158, 27, 27);
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    
+}
+.colorhome {
+    color: rgb(209, 171, 245);
+}
+a{
+    color: rgb(209, 171, 245);
+}
+h4 {
+    color: darkred;
+    font-size: 240%;
+
+}
+h3{font-size: 270%;
+    color: rgb(121, 13, 13);
+}
+.liu{
+    font-size: 180%;
+}
+strong{
+    color: rgb(143, 25, 48);
+}
+h5{
+    font-size: 180%;
+    color:rgb(194, 27, 27) ;
+}
+.boxht{
+    display: flex;
+    flex-flow: column row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(60, 10, 10);
+    width: 50%;
+    border-radius: 20px;
+    border: 5px rgb(80, 8, 8) solid;
+    color:rgb(211, 168, 177)
+    
+}
